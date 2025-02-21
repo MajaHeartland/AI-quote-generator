@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <title>Inspirational Quote Generator</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>AI Inspirational Quote Generator</h1>
+      </header>
+      <main>
+        <div class="form-container">
+          <form action="submit" id="quote-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of the desired quote"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-input"
+            />
+            <button type="submit" class="submit-button">Submit</button>
+          </form>
+          <div class="hint">
+            <strong>I.e. Not giving up, friendship, motivation, love...</strong>
+          </div>
+        </div>
+        <div class="quote hidden" id="quote"></div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://www.linkedin.com/in/majaheartland/" target="_blank"
+          >Maja Heartland</a
+        >
+        and it is
+        <a
+          href="https://github.com/MajaHeartland/inspirational-quote-generator"
+          target="_blank"
+          >open-sourced.
+        </a>
+      </footer>
+    </div>
+    <script type="module" src="src/index.js"></script>
+  </body>
+</html>
